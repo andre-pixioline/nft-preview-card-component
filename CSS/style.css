@@ -92,6 +92,7 @@ main {
 .card .info .eth {
     color: var(--primary-medium);
     font-size: 16px;
+    font-weight: 500;
     letter-spacing: 0.1px;
     display: flex;
 }
