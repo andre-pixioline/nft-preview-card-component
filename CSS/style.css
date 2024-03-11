@@ -1,0 +1,164 @@
+html {
+    background-color: var(--bg-main);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-card);
+    max-width: 350px;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.card .img-link {
+    position: relative;
+    display: flex;
+}
+
+.card .img-link .img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card .img-link:hover::before {
+    opacity: 0.3;
+    transition: 0.4 ease-in-out; 
+}
+
+.card .img-link:hover::after {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+
+ .card .img-link::before {
+    content: '';
+    background-color: cyan;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    opacity: 0;
+}
+
+.card .img-link::after {
+    content: '';
+    background: url(../images/icon-view.svg) no-repeat center;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card .titulo {
+    padding: 19px 0 19px;
+}
+
+.card .titulo .title-link{
+    color: #FFF;
+    font-size: 21px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+.card .titulo .title-link:hover {
+    color: var(--primary-medium);
+}
+
+.card .desc {
+    color: var(--primary-soft);
+    max-height: 100%;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.07px;
+}
+
+.card .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 0 25px;
+}
+
+.card .info .eth {
+    color: var(--primary-medium);
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    display: flex;
+}
+
+.card .info .eth::before {
+    content: '';
+    background: url(../images/icon-ethereum.svg) no-repeat center;
+    width: 15px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.card .info .tempo {
+    color: var(--primary-soft);
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    display: flex;
+}
+
+.card .info .tempo::before {
+    content: '';
+    background: url(../images/icon-clock.svg) no-repeat center;
+    width: 15px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.card .autor {
+    display: flex;
+    align-items: center;
+    padding: 17px 0 8px;
+    border-top: 1px solid var(--line);
+    color: var(--primary-soft);
+}
+
+.card .autor .avatar {
+    max-width: 33px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin-right: 17.5px;
+}
+
+.card .autor .txt {
+    font-size: 16px;
+}
+
+.card .autor .txt .creator-link {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.30px;
+}
+
+.card .autor .txt .creator-link:hover {
+    color: var(--primary-medium);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--primary-soft);
+}
+
+.attribution a {
+    color: #FFF;
+}
+
+.attribution a:hover {
+    color: var(--primary-medium)
+}
