@@ -31,8 +31,8 @@ Os usuários poderão:
 
 ### Links
 
-- Repositório: [GitHub - NFT preview card](https://github.com/andre-pixioline/nft-preview-card-component-main)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Repositório: [GitHub - NFT preview card](https://github.com/andre-pixioline/nft-preview-card-component)
+- Live Site URL: [GitHub Pages](https://andre-pixioline.github.io/nft-preview-card-component/)
 
 ## Meu processo
 
